@@ -1,0 +1,10 @@
+使用Gulp构建TypeScript，在Gulp管道里添加Browserify， uglify或Watchify。 它还包涵了 Babel的功能，通过使用Babelify。
+
+Watchify 启动Gulp并保持运行状态，当你保存文件时自动编译。 帮你进入到编辑-保存-刷新浏览器的循环中。
+Browserify 把这个工程由Node.js环境移到浏览器环境里。 把所有模块捆绑成一个JavaScript文件。
+Uglify 帮你压缩代码，将花费更少的时间去下载它们。
+
+作者：MasonInFaith
+链接：https://www.jianshu.com/p/512127171000
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
