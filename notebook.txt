@@ -1,0 +1,26 @@
+使用Gulp构建TypeScript，在Gulp管道里添加Browserify， uglify或Watchify。 它还包涵了 Babel的功能，通过使用Babelify。
+
+Watchify 启动Gulp并保持运行状态，当你保存文件时自动编译。 帮你进入到编辑-保存-刷新浏览器的循环中。
+Browserify 把这个工程由Node.js环境移到浏览器环境里。 把所有模块捆绑成一个JavaScript文件。
+Uglify 帮你压缩代码，将花费更少的时间去下载它们。
+
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "gulp build-eslint-rules",
+    "pretest": "gulp tests",
+    "test": "gulp runtests-parallel --light=false",
+    "test:eslint-rules": "gulp run-eslint-rules-tests",
+    "build": "npm run build:compiler && npm run build:tests",
+    "build:compiler": "gulp local",
+    "build:tests": "gulp tests",
+    "start": "node lib/tsc",
+    "clean": "gulp clean",
+    "gulp": "gulp",
+    "jake": "gulp",
+    "lint": "gulp lint",
+    "lint:ci": "gulp lint --ci",
+    "lint:compiler": "gulp lint-compiler",
+    "lint:scripts": "gulp lint-scripts",
+    "setup-hooks": "node scripts/link-hooks.js"
+  },

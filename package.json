@@ -4,7 +4,13 @@
   "description": "",
   "main": "./dist/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build:compiler && npm run build:tests",
+    "build:compiler": "gulp local",
+    "build:tests": "gulp tests",
+    "start": "node dist/main.js",
+    "clean": "gulp clean",
+    "gulp": "gulp",
+    "local": "gulp local"
   },
   "author": "gsw",
   "license": "ISC",
